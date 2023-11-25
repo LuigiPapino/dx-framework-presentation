@@ -1,3 +1,4 @@
+```mermaid
 %%{
   init: {
     'theme': 'base',
@@ -123,3 +124,4 @@
     
     classDef darkPrimary fill:#455A64;
     class Contextual darkPrimary
+```
