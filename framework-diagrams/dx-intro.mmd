@@ -1,0 +1,41 @@
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#607D8B',
+      'primaryTextColor': '#212121',
+      'primaryBorderColor': '#BDBDBD',
+      'lineColor': '#FFFFFF',
+      'secondaryColor': '#455A64',
+      'tertiaryColor': '#CFD8DC'
+    }
+  }
+}%%
+
+graph LR;
+    DxFactors([<font size=4><b>DX Factors</b></font>])
+
+    Contextual([<font size=4><b>Contextual Characteristics])
+
+    DX((<font size=5><b>Developer Experience</b></font>
+      Cognition, Affect, Conation))
+
+Barriers([<font size=4><b>Barriers to Improvement</b></font>])
+
+Strategies([<font size=4><b>Strategies</b></font>])
+
+Coping([<font size=4><b>Coping Mechanisms</b></font>])
+
+Importance{" "}
+
+DxFactors --> Importance --> DX
+
+Contextual -->|Determine importance of| Importance
+
+DX --> Barriers
+
+Barriers --> Strategies & Coping
+
+
+classDef orange fill:#FF9800,stroke-width:4px;
+class DX orange

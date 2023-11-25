@@ -1,0 +1,86 @@
+%%{
+  init: {
+    'theme': 'base',
+    'themeVariables': {
+      'primaryColor': '#607D8B',
+      'primaryTextColor': '#212121',
+      'primaryBorderColor': '#BDBDBD',
+      'lineColor': '#FFFFFF',
+      'secondaryColor': '#455A64',
+      'tertiaryColor': '#CFD8DC'
+    }
+  }
+}%%
+
+  graph LR;
+      DxFactors[<font size=4><b>DX Factors</b></font>
+      <u>Development and Release:</u>
+      Codebase health
+      Development environment
+      Automated testing
+      Frictionless release
+
+      <u>Product management:</u>
+      Clear goals, scope, requirements
+      Working iteratively - small WIPs
+      Unreasonable deadlines
+      Having a say on roadmap/priorities
+      Providing value to business
+
+      <u>Collaboration and Culture:</u>
+      Supportiveness
+      Knowledge sharing
+      Feeling connected
+      Code review process
+      Collaboration between departments
+      Psychological safety
+      Communication
+      Having aligned values
+      Getting Recognition
+
+      <u>Developer Flow and fulfilment:</u>
+      Autonomy
+      Challenging/stimulating work
+      Making progress without obstacles
+      Uninterrupted time
+      Work-life balance
+      Learning
+      Stability of job and team
+      Clear paths for career growth
+]
+      
+      Contextual[<font size=4><b>Contextual Characteristics</b></font>
+      
+      Presence of Problems
+      Expectations
+      Seniority
+      Personal interests
+      Company goals
+      Company maturity
+      Frequency of problems]
+      
+      DX((<font size=5><b>Developer Experience</b></font>
+      Cognition, Affect, Conation))
+      
+      Barriers[<font size=4><b>Barriers to Improvement</b></font>]
+      
+      Strategies[<font size=4><b>Strategies</b></font>]
+      
+      Coping[<font size=4><b>Coping Mechanisms</b></font>]
+      
+      Importance{" "}
+      
+      DxFactors --> Importance --> DX
+
+      Contextual -->|Determine importance of| Importance
+
+      DX --> Barriers
+      
+      Barriers --> Strategies & Coping
+
+
+    classDef accent fill:#FF9800,stroke-width:4px;
+    class DX accent
+    
+    classDef darkPrimary fill:#455A64;
+    class Contextual darkPrimary
